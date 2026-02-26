@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<nav class="navbar glass-nav">
+    <div class="nav-left">🎓 Help Desk</div>
+</nav>
+
+<div class="page-wrapper">
+
+    <div class="card form-card">
+        <h2 style="text-align:center;margin-bottom:10px;">Welcome Back</h2>
+        <p style="text-align:center;opacity:.8;margin-bottom:20px;">
+            Login to continue
+        </p>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()" class="btn-primary" style="width:100%;">
+            Login
+        </button>
+
+        <p id="registerBlock" style="text-align:center;margin-top:15px;">
+    New user?
+    <a href="register.html" style="color:#4ade80;">Register</a>
+</p>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

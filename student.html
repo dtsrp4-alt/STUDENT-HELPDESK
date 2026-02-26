@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body onload="loadStudentTickets()">
+
+<header>Student Dashboard</header>
+
+<nav class="navbar glass-nav">
+    <div class="nav-left">🎓 Student Dashboard</div>
+    <div class="nav-right">
+        <a onclick="logout()" style="cursor:pointer;">Logout</a>
+    </div>
+</nav>
+
+<div class="page-wrapper">
+
+<div class="dashboard-grid">
+
+    <div class="card">
+        <h3>Raise Ticket</h3>
+        <select id="category">
+            <option>Academic Issue</option>
+            <option>Administrative Issue</option>
+            <option>Exam Related</option>
+            <option>Technical Issue</option>
+        </select>
+        <textarea id="description" placeholder="Describe your issue"></textarea>
+        <button onclick="raiseTicket()" class="btn-primary">Submit</button>
+    </div>
+
+    <div class="card">
+        <h3>Your Tickets</h3>
+        <table id="ticketTable"></table>
+    </div>
+
+    <div class="card">
+        <h3>Anonymous Feedback</h3>
+        <textarea id="feedbackText"></textarea>
+        <button onclick="submitFeedback()" class="btn-secondary">
+            Submit Feedback
+        </button>
+    </div>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

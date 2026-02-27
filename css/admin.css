@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #374151;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    background: #f3f4f6;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chart-container {
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #1f2937;
+    color: white;
+}
+
+.dark-mode .main {
+    background: #1f2937;
+}
+
+.dark-mode table {
+    background: #374151;
+}
